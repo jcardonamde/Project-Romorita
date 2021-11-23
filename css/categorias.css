@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* --------------------------- */
+/* Estilos Barra de navegación*/
+/* --------------------------- */
+.barra-nav {
+    display: table;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin: auto;
+    margin-top: 15px;
+}
+.barra-nav ul {
+    align-items: center;
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    justify-content: center;
+    list-style: none;
+}
+.barra-nav ul li:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    line-height: 15pt;
+    padding-bottom: 3px;
+}
+.barra-nav_left {
+    margin-left: 50px;
+    z-index: 2;
+}
+.barra-nav_left li {
+    float: left;
+    margin: 10px;
+    margin-right: 30px;
+    padding: 2px;
+}
+.barra-nav_left a {
+    color: black;
+    text-transform: uppercase;
+}
+.barra-nav_left li ul {
+    display: none;
+    position: absolute;
+}
+.barra-nav_left li:hover > ul {
+    display: block;
+}
+#espaciado-shop1 {
+    margin-top: 15px;
+}
+.barra-nav_left-submenu1, .barra-nav_left-submenu2 {
+    background-color:white;
+}
+.barra-nav_left-submenu1 li {
+    margin: 4px;
+    margin-left: 5px;
+    position: relative;
+    z-index: 100;
+}
+.barra-nav_left-submenu1 a {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    line-height: 15pt;
+    margin-left: -5px;
+}
+#espaciado-shop2 {
+    margin-top: 15px;
+}
+.barra-nav_left-submenu2 li {
+    margin: 4px;
+    margin-left: 140px;
+    position: relative;
+}
+.barra-nav_left-submenu2 a {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    line-height: 15pt;
+    margin-left: -5px; 
+}
+.barra-nav_right {
+    margin-right: 50px;
+}
+.barra-nav_right li {
+    float: left;
+    margin: 10px;
+    margin-right: 30px;
+    padding: 2px;
+}
+.barra-nav_right a {
+    color: black;
+    text-transform: uppercase;
+}
+.img-logo {
+    display: block;
+    float: left;
+}
+.img-logo:hover {
+    cursor: pointer;
+}
+.icono_carrito {
+    color: #f3f3f3;
+}
+/* --------------------------- */
+/* Estilos contenido del Main*/
+/* --------------------------- */
+.categorias {
+    background-color: #F2ACCD;
+}
+.categoria-pt1 {
+    background-color: rgba(255, 255, 255, 0.822);
+    margin-top: 25px;
+}
+.nombre-categoria {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.nombre-categoria div {
+    width: 50%;
+    position: relative;
+}
+.nombre-categoria div h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.2;
+    position: absolute;
+}
+.categoria-nuevosestilos, .categoria-buzos {
+    left: 150px;
+    top: 250px;
+}
+.categoria-top, .categoria-jeans {
+    left: 250px;
+    top: 250px;
+}
+.categoria-casuales, .categoria-accesorios, .categoria-lookbook {
+    left: 210px;
+    top: 250px;
+}
+.categoria-vestidos, .categoria-masvendidos {
+    left: 215px;
+    top: 250px;
+}
+.categoria-camisetas, .categoria-pantalones, .categoria-deportivos, .categoria-tecnologia, .categoria-maquillaje, .categoria-descuentos, .categoria-tarjetasgift {
+    left: 200px;
+    top: 250px;
+}
+.categoria-recomendados {
+    left: 160px;
+    top: 250px;
+}
+.categoria-tendencias {
+    left: 175px;
+    top: 250px;
+}
+.imagenppal-categoria {
+    height: 535px;
+    object-fit: cover;
+    width: 50%;
+}
+.categoria-pt2 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1.2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.filtros1, .filtros3 {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 20%; 
+}
+.filtros1 label {
+    margin-left: -110px;
+}
+.filtros1 button, .filtros3 button {
+    margin-left: 5px;
+}
+.filtros2 {
+    width: 55%;
+}
+.productos-l1, .productos-l2, .productos-l3 {
+    align-items: row;
+    display: flex;
+}
+.productos-l2 {
+    margin-top: -3.5px;
+}
+.productos-l1 div, .productos-l2 div, .productos-l3 div {
+    width: 25%;
+
+    position: relative;
+    overflow: hidden;
+}
+.productos-l1 div img, .productos-l2 div img, .productos-l3 div img {
+    height: 550px;
+    width: 100%;
+
+    transition: all 500ms ease-out;
+    will-change: transform;
+}
+.productos-l1-1, .productos-l1-2, .productos-l1-3, .productos-l1-4 {
+    position: relative;
+}
+.productos-l2-1, .productos-l2-2, .productos-l2-3, .productos-l2-4 {
+    position: relative;
+}
+.productos-l3-1, .productos-l3-2, .productos-l3-3, .productos-l3-4 {
+    position: relative;
+}
+.productos-l1-1 div, .productos-l1-2 div, .productos-l1-3 div, .productos-l1-4 div {
+    background-color: rgba(133, 133, 133, 0.85);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 490px;
+}
+.productos-l2-1 div, .productos-l2-2 div, .productos-l2-3 div, .productos-l2-4 div {
+    background-color: rgba(133, 133, 133, 0.85);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 490px;
+}
+.productos-l3-1 div, .productos-l3-2 div, .productos-l3-3 div, .productos-l3-4 div {
+    background-color: rgba(133, 133, 133, 0.85);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 490px;
+}
+.precios {
+    align-items: center;
+    border-left: 0.2px solid rgb(97, 96, 96, 0.4);
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.precios h4 {
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+}
+.precios span {
+    color: white;
+    font-weight: 600;
+}
+.precios-dscto {
+    align-items: center;
+    border-left: 0.2px solid rgb(97, 96, 96, 0.4);
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.precios-dscto h4 {
+    margin-bottom: 20px;
+}
+.productos-l1 div .capa, .productos-l2 div .capa, .productos-l3 div .capa {
+    background: rgba(0, 103, 123, 0.7);
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: 100%;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 100%;
+}
+.productos-l1 div:hover > .capa, .productos-l2 div:hover > .capa, .productos-l3 div:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.productos-l1 div:hover > .capa h4, .productos-l2 div:hover > .capa h4, .productos-l3 div:hover > .capa h4 {
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+.productos-l1 div:hover > img, .productos-l2 div:hover > img, .productos-l3 div:hover > img {
+    transform: scale(1.3);
+}
+.productos-l1 div .capa h4, .productos-l2 div .capa h4, .productos-l3 div .capa h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+    transition: all 400ms ease-out;
+    text-transform: uppercase;
+}
+.productos-l1 div .capa .capa-precio, .productos-l2 div .capa .capa-precio {
+    color: #F2ACCD;
+    font-size: 25px;
+    font-weight: bold;
+}
+.productos-l3 div .capa .capa-precio-normal {
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.productos-l3 div .capa .capa-precio-rebaja {
+    color: #F2ACCD;
+    font-size: 25px;
+    font-weight: 600;
+}
+.productos-l1 div .capa .capa-descripcion, .productos-l2 div .capa .capa-descripcion, .productos-l3 div .capa .capa-descripcion {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.productos-l1 div .capa .capa-tallas, .productos-l2 div .capa .capa-tallas, .productos-l3 div .capa .capa-tallas {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.productos-l1 div .capa .capa-tallas li, .productos-l2 div .capa .capa-tallas li, .productos-l3 div .capa .capa-tallas li {
+    color: #fff;
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-transform: uppercase;
+}
+.productos-l1 div .capa .capa-tallas a, .productos-l2 div .capa .capa-tallas a, .productos-l3 div .capa .capa-tallas a {
+    color:white;
+    text-decoration:none;
+}
+.productos-l1 div .capa .capa-tallas li:hover, .productos-l2 div .capa .capa-tallas li:hover, .productos-l3 div .capa .capa-tallas li:hover {
+    color: #F2ACCD;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.capa-carrito {
+    margin-top: 15px;
+    padding-top: 25px;
+}
+.productos-l1 div .capa .capa-carrito a, .productos-l2 div .capa .capa-carrito a, .productos-l3 div .capa .capa-carrito a {
+    color: white;
+    text-transform: uppercase;
+}
+.productos-l1 div .capa .capa-carrito a:hover, .productos-l2 div .capa .capa-carrito a:hover, .productos-l3 div .capa .capa-carrito a:hover {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.precios-dscto-over_normal {
+    color: white;
+    font-weight: 600;
+    text-decoration: line-through;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+}
+.precios-dscto-over_rebaja {
+    color: #F2ACCD;
+    font-weight: 600;
+    position: absolute;
+    top: 35px;
+    right: 125px;
+}
+.recomendados {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.2;
+    margin: 80px 0px 80px 0px;
+    text-align: center;
+}
+/* --------------------------- */
+/* Estilos Footer General*/
+/* --------------------------- */
+footer {
+    align-items: center;
+    height: 260px;
+    position: relative;
+    width: 100%;
+}
+.footer-ppal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-leftpart {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 0px 35px;
+}
+.redes-sociales {
+    margin-bottom: 10px;
+}
+.redes-sociales img {
+    margin-right: 3.5px;
+}
+#social-ntwk {
+    height: 30px;
+    width: 30px;
+}
+.mensaje-suscripcion {
+    margin-bottom: 5px;
+}
+.mensaje-suscripcion h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.mensaje-suscripcion span {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.txt-btn-enviarsuscripcion {
+    margin-top: 5px;
+}
+#textbox-suscripcion {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 260px; 
+}
+#textbox-suscripcion:focus {
+    outline: none;
+}
+.boton_efcircle {
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    height: 30px;
+    justify-content: center;
+    margin-left: -20px;
+    overflow: hidden;
+    position: relative;
+    transition: .3x ease all;
+    width: 110px;
+}
+.boton_efcircle span {
+    position: relative;
+    transform: .3s ease all;
+    z-index: 2;
+}
+.boton_efcircle::after {
+    background: none;
+    border-radius: 100px;
+    content: "";
+    height: 1px;
+    transition: .3s ease-in-out all;
+    transform-origin: center;
+    width: 1px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.boton_efcircle:hover::after {
+    background-color: #63A687;
+    cursor: pointer;
+    transform: scale(300);
+}
+.boton_efcircle:hover {
+    color: white;
+}
+.footer-rightpart {
+    display: flex;
+    flex-direction: row;
+    margin: 65px 50px 0px 0px;
+}
+.footer-rightpart-items1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.footer-rightpart-items1 span {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.footer-rightpart-items2 {
+    display: flex;
+    flex-direction: column;
+}
+.footer-rightpart-items2 span {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    text-transform: uppercase;
+}
+#logo-romorita-footer {
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    left: 630px;
+    top: 90px;
+}

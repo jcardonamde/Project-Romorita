@@ -1,4 +1,5 @@
 # Project-Romorita
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,3 +10,7 @@ This is the final delivery of the project of the first cycle of the course of th
 =======
 This is the final delivery of the project of the first cycle of the course of the IME institute in agreement with Sapiensa - Alcaldia de Medellin https://jcardonamde.github.io/Project-Romorita/
 >>>>>>> ece49f6216ac2c9b390715c34a494bd9df7ef7c2
+=======
+This is the final delivery of the project of the first cycle of the course of the IME institute in agreement with Sapiensa - Alcaldia de Medellin. My team and I use HTML, CSS, and JQuery.
+https://jcardonamde.github.io/Project-Romorita/
+>>>>>>> 46d04d371be832bc26b03bc5624b3b79aa4a6516
